@@ -13,10 +13,12 @@ def encode(pwd):
     #returns encoded string
     return new_pwd
 def decode(pwd):
-    pass
-
-
-
+    pwd_list = []
+    for i in pwd:
+        digit = int(i) - 3
+        pwd_list += str(digit)
+    return pwd_list
+          
 
 #main method
 def main():
@@ -38,7 +40,8 @@ def main():
             print('\n')
         # prints encoded pwd and decoded pwd
         if user_op == 2:
-            pass
+            decoded = decode(new_pwd)
+            print("The encoded password is " + new_pwd + " and the original password is " + decoded + ".")
         #exits program
         if user_op == 3:
             program_init = False
