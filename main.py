@@ -13,11 +13,7 @@ def encode(pwd):
     #returns encoded string
     return new_pwd
 def decode(pwd):
-    pwd_list = []
-    for i in pwd:
-        digit = int(i) - 3
-        pwd_list += str(digit)
-    return pwd_list
+    pass
           
 
 #main method
